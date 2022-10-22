@@ -27,7 +27,7 @@ else
 			QUERY='.data.items[] | select(has("validSlots")) | select(.validSlots[] == "'${MATCH?}'")'
 			;;
 		*)
-			QUERY='.data.items[] | select(.name == ".*'${MATCH?}'.*")'
+			QUERY='.data.items[] | select(.name | test(".*'${MATCH?}'.*"))'
 			;;
 	esac
 fi
