@@ -1,8 +1,15 @@
 #!/bin/sh
 #
-# A script to query monsters in the game.
+# A script to query thieving targets in the game.
 # Usage:
-#	monsters.sh [monster name]
+#	thieving.sh [option]
+#	option:
+#		- unique
+#			lists all unique drops of all targets
+#		- target name
+#			provides all details of the target
+#
+#
 #
 MAIN_RELEASE='https://melvoridle.com/assets/data'
 TEST_RELEASE='https://test.melvoridle.com/dlcPrep/assets/data'
